@@ -35,13 +35,13 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mLockerGpio != NULL) {
+        if (mLockerGpio != null) {
             try {
                 mLockerGpio.close();
             } catch (IOException e) {
                 Log.e(TAG, "Error on closing the GPIO pin", e);
             } finally {
-                mLockerGpio = NULL;
+                mLockerGpio = null;
             }
         }
     }
