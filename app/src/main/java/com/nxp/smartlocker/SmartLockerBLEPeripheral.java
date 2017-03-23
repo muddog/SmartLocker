@@ -111,7 +111,7 @@ class SmartLockerBLEPeripheral {
         mBTAdapter.setName("NXP_SLK");
         mAdvDataBuilder.setIncludeDeviceName(true);
         mAdvDataBuilder.setIncludeTxPowerLevel(false);
-        mAdvDataBuilder.addServiceUuid(new ParcelUuid(UUID.fromString(SMARTLOCK_CHARACTERISTIC_STATUS_UUID128)));
+        mAdvDataBuilder.addServiceUuid(new ParcelUuid(UUID.fromString(SMARTLOCK_SERVICE_UUID128)));
 
         mAdvSettingsBuilder = new AdvertiseSettings.Builder();
         mAdvSettingsBuilder.setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_LOW_LATENCY);
